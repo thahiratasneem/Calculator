@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.calculator.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <Button
+        android:id="@+id/divbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mulbtn"
+        android:layout_alignBottom="@+id/mulbtn"
+        android:layout_alignLeft="@+id/subbtn"
+        android:text="div" />
+
+    <Button
+        android:id="@+id/mulbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="72dp"
+        android:text="mul" />
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="18dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ed2"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:text="add" />
+
+    <Button
+        android:id="@+id/subbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ed2"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="14dp"
+        android:text="sub" />
+
+    <EditText
+        android:id="@+id/ed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ed1"
+        android:layout_marginTop="18dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed2"
+        android:layout_marginTop="37dp"
+        android:layout_toRightOf="@+id/addbtn"
+        android:text="TextView" />
+
+</RelativeLayout>
